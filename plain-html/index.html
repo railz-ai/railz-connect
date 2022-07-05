@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>test for widget with minimum css</title>
+  <style>
+      html, body, main {
+          height: 100%;
+      }
+
+      body {
+          background-color: hsla(0, 4%, 65%, 0.576);
+      }
+
+      main {
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+      }
+
+      .container {
+          width: 100%;
+          max-width: 864px;
+          margin: auto;
+      }
+  </style>
+
+</head>
+<body>
+<main>
+  <div class='container'>
+    <h1 class='text-center align-content-center'>Clean version of railz connect</h1>
+    <div id='railz-connect'></div>
+  </div>
+</main>
+
+<script src='./railz-connect.js'></script>
+<script>
+  var params = new URLSearchParams(document.location.search);
+  var widgetId = params.get('widgetId');
+  var businessName = params.get('businessName');
+  var serviceFilterEnabled = params.get('serviceFilterEnabled') || true;
+  var redirectUrl = params.get('redirectUrl');
+  var brandColor = params.get('brandColor');
+  var accentColor = params.get('accentColor');
+  var closeEnabled = params.get('closeEnabled') || true;
+  var removeRailzWatermark = params.get('removeRailzWatermark') || false;
+  var closeRedirectUrl = params.get('closeRedirectUrl');
+</script>
+<script>
+  var widget = new RailzConnect();
+  widget.mount({
+    parentElement: document.getElementById('railz-connect'),
+    widgetId: widgetId,
+    serviceFilterEnabled: serviceFilterEnabled,
+    businessName: businessName,
+    redirectUrl: redirectUrl,
+    brandColor: brandColor,
+    accentColor: accentColor,
+    closeEnabled: closeEnabled,
+    removeRailzWatermark: removeRailzWatermark,
+    closeRedirectUrl,
+    onExit: (event, data) => {
+      console.log(event, data);
+    },
+    onSuccess: (event, data) => {
+      console.log(event, data);
+    },
+    onError: (event, data) => {
+      console.error(event, data);
+    },
+    // metadata: [
+    //   {
+    //   "name": "businessLocation",
+    //   "value": "canada",
+    //   "webhookLocation": ["header", "body"]
+    //   }
+    // ]
+  });
+</script>
+</body>
+</html>

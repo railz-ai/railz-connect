@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {RailzConnect} from '@railzai/railz-connect';
+import {RailzConnect} from '../../../src/index';
 import {useEffect, useRef} from "react";
 
 function App() {

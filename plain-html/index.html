@@ -38,8 +38,8 @@
     <div id='railz-connect'></div>
   </div>
 </main>
-
-<script src='./railz-connect.js'></script>
+<!--You can also use https://connect.railz.ai/v1/railz-connect.js-->
+<script src='https://cdn.jsdelivr.net/npm/@railzai/railz-connect/dist/railz-connect.js'></script>
 <script>
   var params = new URLSearchParams(document.location.search);
   var widgetId = params.get('widgetId');
@@ -56,7 +56,7 @@
   var widget = new RailzConnect();
   widget.mount({
     parentElement: document.getElementById('railz-connect'),
-    widgetId: widgetId,
+    widgetId: 'wid_dev_457bbff4-1e4c-4fe1-899d-9ad74b87ec41',
     serviceFilterEnabled: serviceFilterEnabled,
     businessName: businessName,
     redirectUrl: redirectUrl,

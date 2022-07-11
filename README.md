@@ -42,18 +42,18 @@ Examples are also available in this repo.
 
 ## How to use
 The previous version of Railz Connect was hosted in our CDN as a script, that method is still supported
-however you can now follow that same method using npm. You can also access railz connect tag as a custom
-element using [web components](https://www.webcomponents.org/introduction)
+however you can now follow that same method using npm.
 
 This is the preferred approach for integrating with Railz Connect.
 
-### Angular
+### Using HTML Reference
+#### Angular
 
-#### app.component.ts
+##### app.component.ts
 ```ts
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
-import { RailzConnect } from '@railzai/railz-connect';
+import RailzConnect from '@railzai/railz-connect';
 
 @Component({
     selector: 'app-root',
@@ -72,15 +72,15 @@ export class AppComponent implements AfterViewInit {
     }
 }
 ```
-#### app.component.html
+##### app.component.html
 ```html
 <div id='railz-connect' #railzConnect></div>
 ```
 
 
-### React
+#### React
 ```tsx
-import {RailzConnect} from '@railzai/railz-connect';
+import RailzConnect from '@railzai/railz-connect';
 import {useEffect, useRef} from "react";
 
 function App() {
@@ -99,5 +99,27 @@ function App() {
 }
 
 export default App;
+
+```
+
+#### Vue
+```html
+<script>
+  import RailzConnect from "@railzai/railz-connect";
+  const widget = new RailzConnect();
+  widget.mount({
+      parentElement: document.getElementById('railz-connect'),
+      widgetId: '<Your Widget Id>'
+  });
+</script>
+
+<template>
+  <main>
+    <template>
+      <div id="railz-connect"></div>
+    </template>
+  </main>
+</template>
+
 
 ```

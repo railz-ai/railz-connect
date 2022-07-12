@@ -9,6 +9,7 @@
   <a href="https://www.npmjs.com/package/@railzai/railz-connect"><img src="https://img.shields.io/npm/v/@railzai/railz-connect/latest.svg" alt="Latest Package on NPM"/></a>
 </p>
 
+
 Railz Connect™ is a plug-and-play widget that provides a secure, elegant authentication flow for each integration that Railz supports. Railz Connect™ makes it secure and easy for business customers to connect their financial data to Railz.
 </br>
 </br>

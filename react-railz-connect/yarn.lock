@@ -1512,6 +1512,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@railzai/railz-connect@latest":
+  version "0.0.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-0.0.1-alpha.1.tgz#0711a4e4c61483ac2df28ac7a29e6d61e6da4b30"
+  integrity sha512-BZC/6MhZO1Xj8o6qg5+0+PefNBUhMyh0SWDCO4s8j99mDV/mC62orJ9zbC1pEsOVyk6U0HFFZbXilYMBxdyisQ==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"

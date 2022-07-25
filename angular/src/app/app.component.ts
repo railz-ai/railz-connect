@@ -8,18 +8,13 @@ import RailzConnect from '@railzai/railz-connect';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
-  showComponents = false;
   @ViewChild('railzConnect', { static: false }) railzConnect: ElementRef;
 
   ngAfterViewInit(): void {
     const widget = new RailzConnect();
     widget.mount({
       parentElement: this.railzConnect.nativeElement,
-      widgetId: 'wid_dev_457bbff4-1e4c-4fe1-899d-9ad74b87ec41',
+      widgetId: '<Your Widget Id>',
     });
-  }
-
-  setShowComponents = () => {
-    this.showComponents = !this.showComponents;
   }
 }

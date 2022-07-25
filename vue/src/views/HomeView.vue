@@ -8,7 +8,7 @@
     const widget = new RailzConnect();
     widget.mount({
       parentElement: railzConnect.value,
-      widgetId: 'wid_dev_457bbff4-1e4c-4fe1-899d-9ad74b87ec41'
+      widgetId: '<Your Widget Id>'
     });
   })
 </script>

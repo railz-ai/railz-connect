@@ -16,7 +16,6 @@
 
     <nav>
       <RouterLink to="/">Home</RouterLink>
-<!--      <RouterLink to="/web">Web Component</RouterLink>-->
     </nav>
   </header>
 

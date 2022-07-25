@@ -1361,6 +1361,11 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
+"@railzai/railz-connect@latest":
+  version "0.0.1-alpha.3"
+  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-0.0.1-alpha.3.tgz#3602b777040dced22d835c2919b13943f0cd2d7b"
+  integrity sha512-rPDxrhl07QRI21vVFKEwcTYMDP20W8I3fVvt2GJvqiYNbCY92UBa0ML5BiJA01nM4KtNCTh2iNQ0Ap1qb7TiVg==
+
 "@schematics/angular@13.3.8":
   version "13.3.8"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-13.3.8.tgz#88daf0f4d3e2eac36e2f7933c54dd91bbea53ca9"

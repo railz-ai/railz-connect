@@ -1,22 +1,11 @@
 <script setup lang="ts">
-  import { RouterLink, RouterView } from "vue-router";
-  import HelloWorld from "@/components/HelloWorld.vue";
+  import { RouterView } from "vue-router";
+  import Header from "@/components/Header.vue";
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="80"
-      height="80"
-    />
-    <HelloWorld/>
-
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-    </nav>
+    <Header/>
   </header>
 
   <RouterView />
@@ -30,6 +19,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  margin-top: 24px;
 }
 
 header {

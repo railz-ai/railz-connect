@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import RailzConnect from '@railzai/railz-connect';
 import {useEffect, useRef} from "react";
@@ -17,11 +16,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Welcome</p>
-      </header>
-      <div>
-        <div id='railz-connect' ref={ref}/>
+        <p>This is a sample Railz Connect project using React</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -33,6 +29,9 @@ function App() {
         >
           Learn Railz Connect
         </a>
+      </header>
+      <div>
+        <div id='railz-connect' ref={ref}/>
       </div>
     </div>
   );

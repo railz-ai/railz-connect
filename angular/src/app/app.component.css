@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   gap: 20px;
+  font-family: Helvetica, sans-serif;
 }
 
 button {
@@ -11,4 +11,8 @@ button {
   background: rgba(105, 250, 189, 0.34);
   color: #f2f2f2;
   border-radius: 10px;
+}
+.toolbar {
+  text-align: center;
+  margin-top: 16px;
 }

@@ -5,6 +5,16 @@
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
       <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
     </h3>
+    <p>
+      Edit <code>src/views/HomeView.vue</code> to pass it your required parameters and save to reload.
+    </p>
+    <a
+        href="https://docs.railz.ai/docs/railz-connect-overview"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+      Learn Railz Connect
+    </a>
   </div>
 </template>
 

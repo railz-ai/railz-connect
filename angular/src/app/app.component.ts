@@ -14,7 +14,7 @@ export class AppComponent implements AfterViewInit {
     const widget = new RailzConnect();
     widget.mount({
       parentElement: this.railzConnect.nativeElement,
-      widgetId: '<Your Widget Id>',
+      widgetId: '<Your Widget Id>'
     });
   }
 }

@@ -1,5 +1,0 @@
-{
-  "publishDirectory": false,
-  "sandboxes": ["react-railz-connect", "angular", "vue"],
-  "node": "14"
-}

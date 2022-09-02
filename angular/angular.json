@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "@railzai/railz-connect"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,6 +104,5 @@
         }
       }
     }
-  },
-  "defaultProject": "untitled"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "install": "cd angular && yarn install && cd ../react-railz-connect && yarn install && cd ../vue && yarn install",
+    "build": "echo 'nothing to build'",
+    "prettier:write": "prettier . --write --ignore-unknown --allow-empty",
+    "run:lint-staged": "lint-staged",
+    "lint": "yarn eslint && yarn stylelint && yarn prettier:write"
+  },
+  "devDependencies": {
+    "lint-staged": "~13.0.1",
+    "prettier": "~2.7.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown --allow-empty"
+  },
+  "packageManager": "yarn@1.22.17"
+}

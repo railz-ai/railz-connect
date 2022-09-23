@@ -48,7 +48,7 @@ Change the railz-connect version in the `package.json` to the desired version.
 
 ```
   "dependencies": {
-    "@railzai/railz-connect": "^2.0.0-alpha.0",
+    "@railzai/railz-connect": "~1.1.1",
   },
 ```
 Install the latest packages & start the app.

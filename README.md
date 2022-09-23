@@ -42,6 +42,29 @@ Multiple examples are provided in [CodeSandbox](https://codesandbox.io/examples/
 
 Examples are also available in this repo.
 
+## Upgrading or changing Connect version
+
+Change the railz-connect version in the `package.json` to the desired version.
+
+```
+  "dependencies": {
+    "@railzai/railz-connect": "~1.1.1",
+  },
+```
+Install the latest packages & start the app.
+```
+cd /[your-installation-dir]
+yarn && yarn up
+```
+
+If you need to troubleshoot the upgrade, you can try deleting the `node_modules` in the root directory & reinstall the packages.
+
+```
+cd /[your-installation-dir]
+rm -rf node_modules
+yarn && yarn up
+```
+
 ## How to use
 The previous version of Railz Connect was hosted in our CDN as a script, that method is still supported
 however you can now follow that same method using npm.

@@ -51,10 +51,18 @@ Change the railz-connect version in the `package.json` to the desired version.
     "@railzai/railz-connect": "~1.1.1",
   },
 ```
-Install the latest packages & start the app.
+Install & start the app.
 ```
 cd /[your-installation-dir]
-yarn && yarn up
+yarn install && yarn start
+```
+
+Or upgrade Railz Connect to latest version
+```
+cd /[your-installation-dir]
+yarn install
+yarn add @railzai/railz-connect
+yarn start
 ```
 
 If you need to troubleshoot the upgrade, you can try deleting the `node_modules` in the root directory & reinstall the packages.
@@ -62,7 +70,7 @@ If you need to troubleshoot the upgrade, you can try deleting the `node_modules`
 ```
 cd /[your-installation-dir]
 rm -rf node_modules
-yarn && yarn up
+yarn install && yarn start
 ```
 
 ## How to use

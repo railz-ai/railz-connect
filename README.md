@@ -44,17 +44,21 @@ Examples are also available in this repo.
 
 ## Upgrading or changing Connect version
 
-Change the railz-connect version in the `package.json` to the desired version.
+Change the railz-connect version in the `package.json` to the desired version or upgrade to latest connect version with:
+
+```
+yarn add @railzai/railz-connect
+```
 
 ```
   "dependencies": {
     "@railzai/railz-connect": "~1.1.1",
   },
 ```
-Install the latest packages & start the app.
+Install & start the app.
 ```
 cd /[your-installation-dir]
-yarn && yarn up
+yarn install
 ```
 
 If you need to troubleshoot the upgrade, you can try deleting the `node_modules` in the root directory & reinstall the packages.
@@ -62,7 +66,7 @@ If you need to troubleshoot the upgrade, you can try deleting the `node_modules`
 ```
 cd /[your-installation-dir]
 rm -rf node_modules
-yarn && yarn up
+yarn install
 ```
 
 ## How to use

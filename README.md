@@ -66,7 +66,7 @@ If you need to troubleshoot the upgrade, you can try deleting the `node_modules`
 ```
 cd /[your-installation-dir]
 rm -rf node_modules
-yarn install && yarn start
+yarn install
 ```
 
 ## How to use

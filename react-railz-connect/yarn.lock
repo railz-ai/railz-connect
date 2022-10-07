@@ -1573,9 +1573,9 @@
     source-map "^0.7.3"
 
 "@railzai/railz-connect@latest":
-  version "1.1.0-alpha.7"
-  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-1.1.0-alpha.7.tgz#96d5a611e19a7898737ceaf33894d5f42f404eba"
-  integrity sha512-GEUAYlUMJ9ink8Hftumt2Q30G3EqjMDW+xK+ldXAXHoGD31g1xDQdGNazKoTOHW6hBMLRlvAuOndfeAG/U7zvQ==
+  version "2.0.0-alpha.26"
+  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.0.0-alpha.26.tgz#36e77115ade537ef3534e4ece02eb2c61c73f259"
+  integrity sha512-b2cjIkioBZLQAGgHyn5azj4TWFM2uyYuH0CSGY6Nq7PW7PyDa2DzyqI14JeEUqhA2KDfWQwkyO43NxvXbyxUeA==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"

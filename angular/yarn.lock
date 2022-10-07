@@ -1657,7 +1657,7 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@railzai/railz-connect@2.0.0-alpha.26":
+"@railzai/railz-connect@latest":
   version "2.0.0-alpha.26"
   resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.0.0-alpha.26.tgz#36e77115ade537ef3534e4ece02eb2c61c73f259"
   integrity sha512-b2cjIkioBZLQAGgHyn5azj4TWFM2uyYuH0CSGY6Nq7PW7PyDa2DzyqI14JeEUqhA2KDfWQwkyO43NxvXbyxUeA==

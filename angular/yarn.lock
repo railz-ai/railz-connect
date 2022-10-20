@@ -1657,10 +1657,10 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@railzai/railz-connect@latest":
-  version "2.0.0-alpha.26"
-  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.0.0-alpha.26.tgz#36e77115ade537ef3534e4ece02eb2c61c73f259"
-  integrity sha512-b2cjIkioBZLQAGgHyn5azj4TWFM2uyYuH0CSGY6Nq7PW7PyDa2DzyqI14JeEUqhA2KDfWQwkyO43NxvXbyxUeA==
+"@railzai/railz-connect@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.0.0.tgz#0cefc0fb805b8760b79f456316708d3d6c93e5cb"
+  integrity sha512-WW8h+42HMglLb4wbXgzEO8xHO7MmC5BOZ/caBAaN9E84QYjV5w//5sKiTahO5kKEBa/AaxnTstadM9rvB+Q61A==
 
 "@schematics/angular@14.2.1":
   version "14.2.1"
@@ -5697,10 +5697,17 @@ rxjs@6.6.7:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.5.5, rxjs@~7.5.0:
+rxjs@^7.5.5:
   version "7.5.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.6.tgz#0446577557862afd6903517ce7cae79ecb9662bc"
   integrity sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==
+  dependencies:
+    tslib "^2.1.0"
+
+rxjs@~7.5.7:
+  version "7.5.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.7.tgz#2ec0d57fdc89ece220d2e702730ae8f1e49def39"
+  integrity sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==
   dependencies:
     tslib "^2.1.0"
 

@@ -11,7 +11,6 @@ function App() {
       parentElement: ref.current,
       widgetId: '<Your Widget Id>'
     });
-    // eslint-disable-next-line
   },[])
   return (
     <div className="App">

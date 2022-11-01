@@ -14,7 +14,7 @@ Railz is the Accounting Data-as-a-Service™ solution that makes sense of your b
 Railz Connect™ is a plug-and-play widget that provides a secure, elegant authentication flow for each integration that Railz supports. Railz Connect™ makes it secure and easy for business customers to connect their financial data to Railz.
 </br>
 </br>
-<img src="./assets/images/railz-connect.png" alt="Railz Connect preview" width="500px" />
+<img src="./assets/images/railz-connect-2.0.png" alt="Railz Connect preview" width="500px" />
 </br>
 
 ### Install

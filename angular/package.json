@@ -20,7 +20,7 @@
     "@angular/router": "^14.2.5",
     "rxjs": "~7.5.7",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.7",
+    "zone.js": "~0.12.0",
     "@railzai/railz-connect": "2.0.0"
   },
   "devDependencies": {

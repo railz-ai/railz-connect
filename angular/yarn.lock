@@ -1657,10 +1657,10 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@railzai/railz-connect@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.0.0.tgz#0cefc0fb805b8760b79f456316708d3d6c93e5cb"
-  integrity sha512-WW8h+42HMglLb4wbXgzEO8xHO7MmC5BOZ/caBAaN9E84QYjV5w//5sKiTahO5kKEBa/AaxnTstadM9rvB+Q61A==
+"@railzai/railz-connect@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@railzai/railz-connect/-/railz-connect-2.1.0.tgz#9a0512c175de6b747942e744a5287a2c0932f2bd"
+  integrity sha512-87/L67ZTOg9k3BYEjwSIE5FqrVOSlMKf80BTH+y/GAeOqJWOdkMnlmOkRjhusobbWmUxBG+zoHU1HNn/58cFLw==
 
 "@schematics/angular@14.2.1":
   version "14.2.1"

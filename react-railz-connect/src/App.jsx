@@ -1,24 +1,26 @@
 import './App.css';
 import RailzConnect from '@railzai/railz-connect';
-import {useEffect, useRef} from "react";
+import React, {useEffect, useRef} from "react";
+
+const widget = new RailzConnect();
 
 function App() {
   const ref = useRef();
 
   useEffect(() => {
-    const widget = new RailzConnect();
     widget.mount({
       parentElement: ref.current,
-      widgetId: '<Your Widget Id>'
+      widgetId: '<Your Widget Id>',
     });
   },[])
+  
   return (
     <div className="App">
       <header className="App-header">
         <p>Welcome</p>
         <p>This is a sample Railz Connect project using React</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.jsx</code> and save to reload.
         </p>
         <a
           className="App-link"

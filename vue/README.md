@@ -1,6 +1,6 @@
 # Getting Started with Vue Example App
 
-This template should help get you started developing Railz Connect with Vue 3 in Vite.
+This template should help get you started developing Railz Connect with Vue 3 in [Vite](https://vitejs.dev/).
 
 ## Recommended IDE Setup
 
@@ -13,7 +13,7 @@ git clone https://github.com/railz-ai/railz-connect
 
 cd railz-connect/vue
 
-yarn install
+npm install
 
-yarn dev
+npm run dev
 ```

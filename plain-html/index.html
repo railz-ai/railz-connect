@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible'
+        content='IE=edge'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0'>
     <title>Test for widget with minimum css</title>
     <style>
-        html, body, main {
+        html,
+        body,
+        main {
             height: 100%;
             font-family: Helvetica, sans-serif;
         }
@@ -30,74 +35,83 @@
             margin: auto;
         }
     </style>
-
 </head>
+
 <body>
-<main>
-    <div class='container'>
-        <h1 class='text-center align-content-center'>Welcome</h1>
-        <p>
-            This is a sample Railz Connect project using Vanilla code, Edit <code>index.html</code> and save to reload.
-        </p>
-        <p>
-            You can pass query params via your url for your railz parameters. For example: <code>index.html?widgetId=widgetId</code>
-        </p>
-        <a href="https://docs.railz.ai/docs/railz-connect-overview" target="_blank" rel="noopener noreferrer">
-            Learn Railz Connect
-        </a>
-        <br/>
-        <br/>
-        <div id='railz-connect'></div>
-    </div>
-</main>
-<!--You can also use https://connect.railz.ai/v1/railz-connect.js-->
-<!--
-    You can also use https://cdn.jsdelivr.net/npm/@railzai/railz-connect/dist/railz-connect.js
-    to always get the latest version, this will also include versions in beta phase.
--->
-<script src='https://cdn.jsdelivr.net/npm/@railzai/railz-connect@2.0.0/dist/railz-connect.js'></script>
-<script>
-    var params = new URLSearchParams(document.location.search);
-    var widgetId = params.get('widgetId');
-    var businessName = params.get('businessName');
-    var serviceFilterEnabled = params.get('serviceFilterEnabled') || true;
-    var redirectUrl = params.get('redirectUrl');
-    var brandColor = params.get('brandColor');
-    var accentColor = params.get('accentColor');
-    var closeEnabled = params.get('closeEnabled') || true;
-    var removeRailzWatermark = params.get('removeRailzWatermark') || false;
-    var closeRedirectUrl = params.get('closeRedirectUrl');
-</script>
-<script>
-    var widget = new RailzConnect();
-    widget.mount({
-        parentElement: document.getElementById('railz-connect'),
-        widgetId: widgetId || '<Your Widget Id>',
-        serviceFilterEnabled: serviceFilterEnabled,
-        businessName: businessName,
-        redirectUrl: redirectUrl,
-        brandColor: brandColor,
-        accentColor: accentColor,
-        closeEnabled: closeEnabled,
-        removeRailzWatermark: removeRailzWatermark,
-        closeRedirectUrl,
-        onExit: (event, data) => {
-            console.log(event, data);
-        },
-        onSuccess: (event, data) => {
-            console.log(event, data);
-        },
-        onError: (event, data) => {
-            console.error(event, data);
-        },
-        // metadata: [
-        //   {
-        //   "name": "businessLocation",
-        //   "value": "canada",
-        //   "webhookLocation": ["header", "body"]
-        //   }
-        // ]
-    });
-</script>
+    <main>
+        <div class='container'>
+            <h1 class='text-center align-content-center'>Welcome</h1>
+            <p>
+                This is a sample Railz Connect project using Vanilla code, Edit <code>index.html</code> and save to
+                reload.
+            </p>
+            <p>
+                You can pass query params via your url for your railz parameters. For example:
+                <code>index.html?widgetId=widgetId</code>
+            </p>
+            <a href="https://docs.railz.ai/docs/railz-connect-overview"
+                target="_blank"
+                rel="noopener noreferrer">
+                Learn Railz Connect
+            </a>
+            <br />
+            <br />
+            <div id='railz-connect'></div>
+        </div>
+    </main>
+    <!--
+    Check https://www.jsdelivr.com/package/npm/@railzai/railz-connect for other versions (like an ESM version)  
+    
+    Including https://cdn.jsdelivr.net/npm/@railzai/railz-connect/dist/railz-connect.min.js to always get the latest stable version.
+    -->
+    <script src='https://cdn.jsdelivr.net/npm/@railzai/railz-connect@2.4.0/dist/railz-connect.min.js'></script>
+    <script>
+        var params = new URLSearchParams(document.location.search);
+        var widgetId = params.get('widgetId');
+        var businessName = params.get('businessName');
+        var serviceFilterEnabled = params.get('serviceFilterEnabled') || true;
+        var redirectUrl = params.get('redirectUrl');
+        var brandColor = params.get('brandColor');
+        var accentColor = params.get('accentColor');
+        var closeEnabled = params.get('closeEnabled') || true;
+        var removeRailzWatermark = params.get('removeRailzWatermark') || false;
+        var closeRedirectUrl = params.get('closeRedirectUrl');
+
+        var widget = new RailzConnect();
+
+        if (!widgetId) {
+            console.error('Please provide a widgetId');
+        }
+        widget.mount({
+            parentElement: document.getElementById('railz-connect'),
+            widgetId: widgetId || '<Your Widget Id>',
+            serviceFilterEnabled: serviceFilterEnabled,
+            businessName: businessName,
+            redirectUrl: redirectUrl,
+            brandColor: brandColor,
+            accentColor: accentColor,
+            closeEnabled: closeEnabled,
+            removeRailzWatermark: removeRailzWatermark,
+            closeRedirectUrl,
+            onExit: (event, data) => {
+                console.log('exit', event, data);
+            },
+            onSuccess: (event, data) => {
+                console.log('success', event, data);
+            },
+            onError: (event, data) => {
+                console.error('error', event, data);
+            },
+            // metadata: [
+            //   {
+            //   "name": "businessLocation",
+            //   "value": "canada",
+            //   "webhookLocation": ["header", "body"]
+            //   }
+            // ]
+        });
+
+    </script>
 </body>
+
 </html>

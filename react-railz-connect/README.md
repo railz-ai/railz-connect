@@ -14,3 +14,9 @@ npm install
 
 npm run start
 ```
+
+
+And to connect with your account, replace `<Your Widget Id>` with your key, in `src/App.jsx`.
+
+Check the [Official Railz Connect docs](https://docs.railz.ai/docs/railz-connect-overview)
+for more detailed description.

@@ -18,7 +18,6 @@ const mountRailzConnect = (parentElement) => {
     parentElement,
     widgetId,
     businessName,
-    endpoint: 'https://auth.qa.railz.ai'
   });
 };
 

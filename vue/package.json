@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47",
+    "vue": "^3.3.5",
     "vue-router": "^4.1.6",
     "@railzai/railz-connect": "2.4.0"
   },

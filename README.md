@@ -1,9 +1,9 @@
 <p>
-  <a href="https://railz.ai/" rel="noopener" target="_blank"><img width="200" src="./assets/images/railz-logo.svg" alt="Railz logo"></a>
+  <a href="https://railz.ai/" rel="noopener" target="_blank"><img width="200" src="./assets/images/fis-logo.png" alt="FIS logo"></a>
 </p>
-Railz is the Accounting Data-as-a-Service™ solution that makes sense of your business customers' financial data.
+FIS® Accounting Data as a Service™ is the solution that makes sense of your business customers' financial data.
 
-<h1>Railz Connect</h1>
+<h1>Accounting Data as a Service Connect™</h1>
 
 <p>
   <a href="https://github.com/railz-ai/railz-connect/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@railzai/railz-connect" alt="Software License"/></a>
@@ -11,10 +11,10 @@ Railz is the Accounting Data-as-a-Service™ solution that makes sense of your b
 </p>
 
 
-Railz Connect™ is a plug-and-play widget that provides a secure, elegant authentication flow for each integration that Railz supports. Railz Connect™ makes it secure and easy for business customers to connect their financial data to Railz.
+Accounting Data as a Service Connect™ is a plug-and-play widget that provides a secure, elegant authentication flow for each integration that Accounting Data as a Service™ supports. Accounting Data as a Service Connect™ makes it secure and easy for business customers to connect their financial data to Accounting Data as a Service™.
 </br>
 </br>
-<img src="./assets/images/railz-connect-2.0.png" alt="Railz Connect preview" width="500px" />
+<img src="./assets/images/03-FIS-Connect.png" alt="Accounting Data as a Service™ Connect preview" width="500px" />
 </br>
 
 ### Install
@@ -33,7 +33,7 @@ yarn add @railzai/railz-connect
 
 ## Documentation
 
-Refer to the [Official Railz Connect docs](https://docs.railz.ai/docs/railz-connect-overview)
+Refer to the [Official Accounting Data as a Service™ docs](https://docs.railz.ai/docs/railz-connect-overview)
 for more detailed description.
 
 ## Examples
@@ -42,9 +42,9 @@ Multiple examples are provided in [CodeSandbox](https://codesandbox.io/examples/
 
 Examples are also available in this repo.
 
-## Upgrading or changing Connect version
+## Upgrading or changing Accounting Data as a Service™ version
 
-Change the railz-connect version in the `package.json` to the desired version or upgrade to latest connect version with:
+Change the version in the `package.json` to the desired version or upgrade to latest connect version with:
 
 ```
 yarn add @railzai/railz-connect
@@ -70,10 +70,10 @@ yarn install
 ```
 
 ## How to use
-The previous version of Railz Connect was hosted in our CDN as a script, that method is still supported
+The previous version of Accounting Data as a Service Connect™ was hosted in our CDN as a script, that method is no longer supported
 however you can now follow that same method using npm.
 
-This is the preferred approach for integrating with Railz Connect.
+This is the preferred approach for integrating with Accounting Data as a Service Connect™.
 
 ### Using HTML Reference
 #### Angular
